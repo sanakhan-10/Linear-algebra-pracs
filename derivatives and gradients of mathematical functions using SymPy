@@ -1,0 +1,25 @@
+import sympy as sp
+
+#Variable
+x, y = sp.symbols('x y')
+
+#function
+f = x**3 + 2*x**2 + x
+print("Function:", f)
+
+#Derivative
+derivative = sp.diff(f, x)
+print("\nDerivative:", derivative)
+
+# Multivariable function
+g = x**2 + y**2 + 3*x*y
+print("\nMultivariable Function:", g)
+
+# Partial derivatives 
+gx = sp.diff(g, x) 
+gy = sp.diff(g, y)
+
+print("\nPartial derivative with respect to x:", gx)
+print("\nPartial derivative with respect to y:", gy)
+
+print("\nGradient:", [gx,gy])

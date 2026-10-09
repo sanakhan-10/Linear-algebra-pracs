@@ -1,0 +1,13 @@
+import numpy as np
+
+A = np.array([[1,2],
+              [3,4]])
+print("ORIGINAL MATRIX :",A)
+transpose = A.T
+print("\nTranspose :",transpose)
+
+determinant = np.linalg.det(A)
+print("\nDeterminant :",determinant)
+
+inverse = np.linalg.inv(A)
+print("\nInverse :",inverse)

@@ -1,0 +1,13 @@
+import numpy as np
+
+A = np.array([[1,2],
+              [3,4]])
+
+B = np.array([5,6])
+
+print("COEFFICIENT MATRIX :",A)
+print("\nCONSTANT MATRIX :",B)
+
+solution = np.linalg.solve(A,B)
+print("\nSOLUTION x :",solution[0])
+print("\nSOLUTION y :",solution[1])
